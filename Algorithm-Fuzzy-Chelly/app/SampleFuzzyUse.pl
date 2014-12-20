@@ -700,7 +700,7 @@ sub min
  $val = $_[$i];
  
    if ($val < $return) 
-{
+   {
     $return = $val;
      
    }
@@ -728,10 +728,7 @@ my $max    = shift;
     
 my $value  = shift;
    
-my $return;
-    
-
-$return = round((min(max($value,$min),$max) - $min) * $range / ($max - $min));
+my $return = round((min(max($value,$min),$max) - $min) * $range / ($max - $min));
     
 return $return;
 
