@@ -1,5 +1,8 @@
 #!/usr/bin/env perl
 
+use strict;
+use warnings;
+
 ##########################################################################################################
 #****************************DEFINING THE RANGE : UNIVERSE OF DISCOURSE [0..25] For example **************
 
