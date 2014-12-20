@@ -9,10 +9,10 @@ use warnings;
 
 #Global Variables
 
-$min_range = 0;
-$max_range = 25;
+my $min_range = 0;
+my $max_range = 25;
 
-$range = $max_range - $min_range;
+my $range = $max_range - $min_range;
 
 
 ##########################################################################################################
@@ -31,67 +31,67 @@ $range = $max_range - $min_range;
 
 #Linguistic Variable for input 1 =  $mature_input1 : Definied with 3 linguistic triangular membership functions (3 terms sets)
  
-$Mature_Low->{0} = 0;
-$Mature_Low->{5} = 1;
-$Mature_Low->{10} = 0;
-$Mature_Low = Transform_Step1_RANGE($min_range,$max_range,$Mature_Low);
-$Mature_Low = Generate_Values_Membership_Form($Mature_Low);
+my $Mature_Low->{0} = 0;
+my $Mature_Low->{5} = 1;
+my $Mature_Low->{10} = 0;
+my $Mature_Low = Transform_Step1_RANGE($min_range,$max_range,$Mature_Low);
+my $Mature_Low = Generate_Values_Membership_Form($Mature_Low);
 
 
-$Mature_Medium->{7} = 0;
-$Mature_Medium->{12} = 1;
-$Mature_Medium->{17} = 0;
-$Mature_Medium = Transform_Step1_RANGE ($min_range,$max_range,$Mature_Medium);
-$Mature_Medium = Generate_Values_Membership_Form($Mature_Medium);
+my $Mature_Medium->{7} = 0;
+my $Mature_Medium->{12} = 1;
+my $Mature_Medium->{17} = 0;
+my $Mature_Medium = Transform_Step1_RANGE ($min_range,$max_range,$Mature_Medium);
+my $Mature_Medium = Generate_Values_Membership_Form($Mature_Medium);
 
 
-$Mature_High->{15} = 0;
-$Mature_High->{20} = 1;
-$Mature_High->{25} = 0;
-$Mature_High = Transform_Step1_RANGE ($min_range,$max_range,$Mature_High);
-$Mature_High = Generate_Values_Membership_Form($Mature_High);
+my $Mature_High->{15} = 0;
+my $Mature_High->{20} = 1;
+my $Mature_High->{25} = 0;
+my $Mature_High = Transform_Step1_RANGE ($min_range,$max_range,$Mature_High);
+my $Mature_High = Generate_Values_Membership_Form($Mature_High);
 
 ##########################################################################################################
 
 #Linguistic Variable for input 1 = $semimature_input2 : Definied with 3 linguistic triangular membership functions (3 terms sets)
 
-$SemiMature_Low->{0} = 0;
-$SemiMature_Low->{5} = 1;
-$SemiMature_Low->{10} = 0;
-$SemiMature_Low = Transform_Step1_RANGE ($min_range,$max_range,$SemiMature_Low);
-$SemiMature_Low = Generate_Values_Membership_Form($SemiMature_Low);
+my $SemiMature_Low->{0} = 0;
+my $SemiMature_Low->{5} = 1;
+my $SemiMature_Low->{10} = 0;
+my $SemiMature_Low = Transform_Step1_RANGE ($min_range,$max_range,$SemiMature_Low);
+my $SemiMature_Low = Generate_Values_Membership_Form($SemiMature_Low);
 
 
-$SemiMature_Medium->{7} = 0;
-$SemiMature_Medium->{12} = 1;
-$SemiMature_Medium->{17} = 0;
-$SemiMature_Medium = Transform_Step1_RANGE ($min_range,$max_range,$SemiMature_Medium);
-$SemiMature_Medium = Generate_Values_Membership_Form($SemiMature_Medium);
+my $SemiMature_Medium->{7} = 0;
+my $SemiMature_Medium->{12} = 1;
+my $SemiMature_Medium->{17} = 0;
+my $SemiMature_Medium = Transform_Step1_RANGE ($min_range,$max_range,$SemiMature_Medium);
+my $SemiMature_Medium = Generate_Values_Membership_Form($SemiMature_Medium);
 
 
-$SemiMature_High->{15} = 0;
-$SemiMature_High->{20} = 1;
-$SemiMature_High->{25} = 0;
-$SemiMature_High = Transform_Step1_RANGE ($min_range,$max_range,$SemiMature_High);
-$SemiMature_High = Generate_Values_Membership_Form($SemiMature_High);
+my $SemiMature_High->{15} = 0;
+my $SemiMature_High->{20} = 1;
+my $SemiMature_High->{25} = 0;
+my $SemiMature_High = Transform_Step1_RANGE ($min_range,$max_range,$SemiMature_High);
+my $SemiMature_High = Generate_Values_Membership_Form($SemiMature_High);
 
 ##########################################################################################################
 
 #Linguistic Variable 3 (output 1) =  $MATURITY  definied with 2 linguistic triangular membership functions (2 terms sets)
 
 
-$Maturity_SemiMature->{0} = 0;
-$Maturity_SemiMature->{8} = 1;
-$Maturity_SemiMature->{15} = 0;
-$Maturity_SemiMature = Transform_Step1_RANGE ($min_range,$max_range,$Maturity_SemiMature);
-$Maturity_SemiMature = Generate_Values_Membership_Form($Maturity_SemiMature);
+my $Maturity_SemiMature->{0} = 0;
+my $Maturity_SemiMature->{8} = 1;
+my $Maturity_SemiMature->{15} = 0;
+my $Maturity_SemiMature = Transform_Step1_RANGE ($min_range,$max_range,$Maturity_SemiMature);
+my $Maturity_SemiMature = Generate_Values_Membership_Form($Maturity_SemiMature);
 
 
-$Maturity_Mature->{10} = 0;
-$Maturity_Mature->{18} = 1;
-$Maturity_Mature->{25} = 0;
-$Maturity_Mature = Transform_Step1_RANGE ($min_range,$max_range,$Maturity_Mature);
-$Maturity_Mature = Generate_Values_Membership_Form($Maturity_Mature);
+my $Maturity_Mature->{10} = 0;
+my $Maturity_Mature->{18} = 1;
+my $Maturity_Mature->{25} = 0;
+my $Maturity_Mature = Transform_Step1_RANGE ($min_range,$max_range,$Maturity_Mature);
+my $Maturity_Mature = Generate_Values_Membership_Form($Maturity_Mature);
 
 ##########################################################################################################
 
@@ -109,15 +109,15 @@ $Maturity_Mature = Generate_Values_Membership_Form($Maturity_Mature);
 
 #Vbles to fuzzify $Vble1 & $Vble2
 
-$Vble_1 = 8;
-$Vble_2 = 9;
+my $Vble_1 = 8;
+my $Vble_2 = 9;
 
 
-$mature_input1 = ScalingToTheRange($min_range,$max_range,$Vble_1);
+my $mature_input1 = ScalingToTheRange($min_range,$max_range,$Vble_1);
 
 print "  $mature_input1\n";
 
-$semimature_input2 = ScalingToTheRange($min_range,$max_range,$Vble_2);
+my $semimature_input2 = ScalingToTheRange($min_range,$max_range,$Vble_2);
 
 print "  $semimature_input2\n";
 
@@ -125,29 +125,29 @@ print "  $semimature_input2\n";
 ############### The Input's Membership Function Values : Fuzzification ###############################
 
 
-$Fuzzy_Mature_Low = $Mature_Low->{$mature_input1};
+my $Fuzzy_Mature_Low = $Mature_Low->{$mature_input1};
 
 print " Fuzzy_Mature_Low = $Fuzzy_Mature_Low\n";
 
-$Fuzzy_Mature_Medium = $Mature_Medium->{$mature_input1};
+my $Fuzzy_Mature_Medium = $Mature_Medium->{$mature_input1};
 
 print " Fuzzy_Mature_Medium = $Fuzzy_Mature_Medium\n";
  
-$Fuzzy_Mature_High = $Mature_High->{$mature_input1};
+my $Fuzzy_Mature_High = $Mature_High->{$mature_input1};
 
 print " Fuzzy_Mature_High = $Fuzzy_Mature_High\n";
 
 
 
-$Fuzzy_SemiMature_Low = $SemiMature_Low->{$semimature_input2};
+my $Fuzzy_SemiMature_Low = $SemiMature_Low->{$semimature_input2};
 
 print " Fuzzy_SemiMature_Low = $Fuzzy_SemiMature_Low\n";
 
-$Fuzzy_SemiMature_Medium = $SemiMature_Medium->{$semimature_input2};
+my $Fuzzy_SemiMature_Medium = $SemiMature_Medium->{$semimature_input2};
 
 print " Fuzzy_SemiMature_Medium = $Fuzzy_SemiMature_Medium\n";
  
-$Fuzzy_SemiMature_High = $SemiMature_High->{$semimature_input2};
+my $Fuzzy_SemiMature_High = $SemiMature_High->{$semimature_input2};
 
 print " Fuzzy_SemiMature_High = $Fuzzy_SemiMature_High\n";
 
@@ -156,53 +156,53 @@ print " Fuzzy_SemiMature_High = $Fuzzy_SemiMature_High\n";
 
 # Define the operator for Aggregation : ("AND"  ,  "OR"  , "PROD") 
 
-$Op_Aggregation = "AND";
+my $Op_Aggregation = "AND";
 
 # Aggragation phase
 
 
-$rule1 = Fuzzy_Aggregation_Step($Op_Aggregation ,$Fuzzy_Mature_Low,$Fuzzy_SemiMature_Low);
+my $rule1 = Fuzzy_Aggregation_Step($Op_Aggregation ,$Fuzzy_Mature_Low,$Fuzzy_SemiMature_Low);
 
 print " rule1 = $rule1\n";
 
-$weight_rule1 = 1;
+my $weight_rule1 = 1;
 
-$rule2 = Fuzzy_Aggregation_Step($Op_Aggregation ,$Fuzzy_Mature_Low,$Fuzzy_SemiMature_Medium);
+my $rule2 = Fuzzy_Aggregation_Step($Op_Aggregation ,$Fuzzy_Mature_Low,$Fuzzy_SemiMature_Medium);
 
 print " rule2 = $rule2\n";
 
-$weight_rule2 = 1;
+my $weight_rule2 = 1;
 
 
-$rule3 = Fuzzy_Aggregation_Step($Op_Aggregation ,$Fuzzy_Mature_Medium,$Fuzzy_SemiMature_Low);
+my $rule3 = Fuzzy_Aggregation_Step($Op_Aggregation ,$Fuzzy_Mature_Medium,$Fuzzy_SemiMature_Low);
 
 print " rule3 = $rule3\n";
 
-$weight_rule3 = 1;
+my $weight_rule3 = 1;
 
 
-$rule4 = Fuzzy_Aggregation_Step($Op_Aggregation ,$Fuzzy_Mature_Medium,$Fuzzy_SemiMature_Medium);
+my $rule4 = Fuzzy_Aggregation_Step($Op_Aggregation ,$Fuzzy_Mature_Medium,$Fuzzy_SemiMature_Medium);
 
 print " rule4 = $rule4\n";
 
-$weight_rule4 = 1;
+my $weight_rule4 = 1;
 
 ###############  IMPLICATION  :   "OR" OPERATOR  ###############################
 
 # Define the operator for Implication : ("MIN" , "PROD")
 
-$Op_Implication = "MIN";
+my $Op_Implication = "MIN";
 
 # Implication phase
 
 
-$rule1_result_fuzzyset = Fuzzy_Implication_Step($Op_Implication, $Maturity_Mature, ($weight_rule1 * $rule1));
+my $rule1_result_fuzzyset = Fuzzy_Implication_Step($Op_Implication, $Maturity_Mature, ($weight_rule1 * $rule1));
 
-$rule2_result_fuzzyset = Fuzzy_Implication_Step($Op_Implication, $Maturity_SemiMature, ($weight_rule2 * $rule2));
+my $rule2_result_fuzzyset = Fuzzy_Implication_Step($Op_Implication, $Maturity_SemiMature, ($weight_rule2 * $rule2));
 
-$rule3_result_fuzzyset = Fuzzy_Implication_Step($Op_Implication, $Maturity_Mature, ($weight_rule3 * $rule3));
+my $rule3_result_fuzzyset = Fuzzy_Implication_Step($Op_Implication, $Maturity_Mature, ($weight_rule3 * $rule3));
 
-$rule4_result_fuzzyset = Fuzzy_Implication_Step($Op_Implication, $Maturity_SemiMature, ($weight_rule4* $rule4));
+my $rule4_result_fuzzyset = Fuzzy_Implication_Step($Op_Implication, $Maturity_SemiMature, ($weight_rule4* $rule4));
 
 
 
@@ -210,37 +210,37 @@ $rule4_result_fuzzyset = Fuzzy_Implication_Step($Op_Implication, $Maturity_SemiM
 
 # Define the operator for  Accumulation : ("MAX" , "SUM")
 
-$Op_Accumulation = "MAX";
+my $Op_Accumulation = "MAX";
 
 #  Accumulation phase
 
 
-$MATURITY_result_fuzzyset = initialize_fuzzyterm(0);
+my $MATURITY_result_fuzzyset = initialize_fuzzyterm(0);
 
 
-$MATURITY_result_fuzzyset = Fuzzy_Accumulation_Step($Op_Accumulation,$MATURITY_result_fuzzyset,$rule1_result_fuzzyset);
+my $MATURITY_result_fuzzyset = Fuzzy_Accumulation_Step($Op_Accumulation,$MATURITY_result_fuzzyset,$rule1_result_fuzzyset);
 
-$MATURITY_result_fuzzyset = Fuzzy_Accumulation_Step($Op_Accumulation,$MATURITY_result_fuzzyset,$rule2_result_fuzzyset);
+my $MATURITY_result_fuzzyset = Fuzzy_Accumulation_Step($Op_Accumulation,$MATURITY_result_fuzzyset,$rule2_result_fuzzyset);
 
-$MATURITY_result_fuzzyset = Fuzzy_Accumulation_Step($Op_Accumulation,$MATURITY_result_fuzzyset,$rule3_result_fuzzyset);
+my $MATURITY_result_fuzzyset = Fuzzy_Accumulation_Step($Op_Accumulation,$MATURITY_result_fuzzyset,$rule3_result_fuzzyset);
 
-$MATURITY_result_fuzzyset = Fuzzy_Accumulation_Step($Op_Accumulation,$MATURITY_result_fuzzyset,$rule4_result_fuzzyset);
+my $MATURITY_result_fuzzyset = Fuzzy_Accumulation_Step($Op_Accumulation,$MATURITY_result_fuzzyset,$rule4_result_fuzzyset);
 
 
 ###############  Defuzzification  ###############################
 
 # Define the operator for  Defuzzification : ("CG")
 
-$Op_Defuzzification = "CG";
+my $Op_Defuzzification = "CG";
 
 #  Defuzzification phase
 
 
-$MATURITY_result_crisp = Fuzzy_Defuzzification_Step($Op_Defuzzification, $MATURITY_result_fuzzyset);
+my $MATURITY_result_crisp = Fuzzy_Defuzzification_Step($Op_Defuzzification, $MATURITY_result_fuzzyset);
 
 print " MATURITY_result_crisp = $MATURITY_result_crisp\n";
 
-$MATURITY = Transform_Step2__RANGE($min_range, $max_range, $MATURITY_result_crisp);
+my  $MATURITY = Transform_Step2__RANGE($min_range, $max_range, $MATURITY_result_crisp);
 
 ##########################################################################################################
 ##########################################################################################################
